@@ -1,0 +1,18 @@
+rvm:
+  - 1.9.2
+  - 1.9.3
+
+env:
+  - DB=sqlite
+  - DB=mysql
+
+script: "./script/ci/travis-build"
+before_script: "ruby ./script/ci/travis-before-build.rb"
+
+branches:
+  only:
+    - master
+
+notifications:
+  recipients:
+    - iqvoc@innoq.com

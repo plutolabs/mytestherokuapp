@@ -1,0 +1,13 @@
+<div class="relation panel">
+  <h2><%= klass.model_name.human(:count => 2) %></h2>
+  <div class="relation-body">
+    <%= item_listing(concept.matches_for_class(klass)) do |match|
+      auto_link(match.value, :html => { :target => '_blank' }) do |text|
+        Iqvoc::rdf_namespaces.each do |prefix, url|
+          text = text.gsub(url, "#{prefix}:")
+        end
+        text
+      end.html_safe
+    end %>
+  </div>
+</div>

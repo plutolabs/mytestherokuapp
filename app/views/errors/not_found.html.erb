@@ -1,0 +1,5 @@
+<h1><%= t("txt.views.errors.not_found.header") %></h1>
+
+<p><em><%= @exception.message %></em></p>
+
+<p><%= raw t("txt.views.errors.not_found.tip", :link => link_to(t("txt.views.navigation.search"), search_path)) %></p>

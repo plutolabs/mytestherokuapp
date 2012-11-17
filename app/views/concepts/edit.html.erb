@@ -1,0 +1,9 @@
+<%= render 'header', :concept => @concept %>
+<%= render 'concepts/sidebars/singular', :concept => @concept %>
+
+<%= error_messages_for @concept %>
+
+<%= render 'concepts/notifications/referenced_concepts',
+  :association_objects_in_editing_mode => @association_objects_in_editing_mode %>
+
+<%= render 'form', :concept => @concept %>

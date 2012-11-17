@@ -1,0 +1,363 @@
+## encoding: UTF-8
+
+# Copyright 2011 innoQ Deutschland GmbH
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+de:
+  languages:
+    de: Deutsch
+    en: Englisch
+    none: Wiss.
+    fr: Französisch
+    sl: Slovenisch
+    pl: Polnisch
+    pt: Portugiesisch
+    es: Spanisch
+    gr: Griechisch
+    bg: Bulgarisch
+    nl: Niederländisch
+    hu: Ungarisch
+    it: Italienisch
+    cs: Tschechisch
+    sk: Slowakisch
+  views:
+    pagination:
+      first: "&laquo; Erste"
+      previous: "&lt; Zurück"
+      next: "Weiter &gt;"
+      last: "Letzte &raquo;"
+      truncate: "&hellip;"
+  txt:
+   common:
+     iqvoc_title: "iQvoc Vocabulary Management System"
+     pref_label: "Bevorzugtes Label"
+     edit: "Bearbeiten"
+     value: "Wert"
+     back: Zurück
+     welcome: "Hallo %{user_name}"
+     save: "Speichern"
+     reset: "Zurücksetzen"
+     language: "Sprache"
+     add_note: "Hinzufügen"
+     delete: "Löschen"
+     attributes: "Eigenschaften"
+     editor: "Redakteur"
+     referenced_concepts: "Einige referenzierte Konzepte befinden sich momentan in Bearbeitung."
+     association_not_found: "Die Assoziation wurde nicht gefunden. Evtl. wurde diese von der anderen Seite bearbeitet. Bitte das Fenster neu laden"
+     to_review: "Zur Freigabe vorlegen"
+     is_in_review: "Dokument befindet sich im Reviewprozess"
+     unpublished_version: Unveröffentlichte Version
+     consistent: "konsistent"
+     inconsistent: "inkonsistent"
+     state:
+       published: "Veröffentlicht"
+       in_review: "Vorlage zur Freigabe"
+       checked_out: "Ausgecheckt"
+     of: von
+     pending: "Lade…"
+     translation_missing_for: "keine Übersetzung für"
+     type_to_search: "Tippen um zu suchen"
+     hint_csv_input: "Mehrere Werte können kommagetrennt eingeben werden."
+     form_errors: "Fehler"
+     representations: "Repräsentationen"
+
+   views:
+     layouts:
+       sections:
+         main: Basisdaten
+         labels: Bezeichner
+         relations: Beziehungen
+         notes: Anmerkungen
+         matches: Beziehungen zu anderen Ontologien
+       application:
+         header: "innoQ Vocabulary Management"
+         select_language: "Sprache auswählen"
+         login: "Anmelden"
+         logout: "Abmelden"
+     instance_configuration:
+       caption: "Instanzkonfiguration"
+       settings:
+         title: Titel
+         available_languages: verfügbare Sprachen
+         languages_pref_labeling: Sprachen für bevorzugte Labels
+         languages_further_labelings_Labeling::SKOS::AltLabel: Sprachen für alternative Labels
+         triplestore_url: Triplestore-URL
+         triplestore_username: Benutzername für Triplestore
+         triplestore_password: Passwort für Triplestore
+         triplestore_autosync: automatische Synchronisation mit Triplestore
+     alphabetical_concepts:
+     untranslated_concepts:
+       caption: "Fehlende Übersetzungen"
+       unavailable: "Fehlende Übersetzungen für die Hauptsprache nicht verfügbar."
+     hierarchical_concepts:
+     concepts:
+       expired_at: "abgelaufen am %{date}"
+       select: "Bitte wählen Sie ein %{concept_class_name} aus der unten aufgeführten Liste."
+       new: "Neues %{concept_class_name}"
+       pref_label: "Bevorzugtes Label"
+       classifiers: "Umweltklassen"
+     labels:
+       new: "Neues Label"
+       template_form: "Vorlageform"
+       language: "Sprache"
+       base_form: "Ansetzungsform"
+       inflectional_code: "Endungscode"
+       inflectionals: "Schreibweisen"
+       versionview: "Versionsansicht für Label"
+       follow_up: "Wiedervorlage"
+       endings: "Endungen"
+       expired_at: "abgelaufen am"
+       label_already_exists: "Es gibt bereits ein Label mit der eingegebenen Vorlageform"
+       edit:
+         header: "Bearbeitung von Label"
+         save: "Speichern"
+         base_data: "Eigenschaften"
+         delete: "Löschen"
+         delete_confirm: "Die Relation wird entfernt. Sind Sie sicher?"
+         edit: "Bearbeiten"
+         apply: "Übernehmen"
+         add_note: "Weitere hinzufügen"
+         reset: "Zurücksetzen"
+       inflectionals_used_in: "Schreibweisen werden auch in folgenden Labels verwendet:"
+     notes:
+       value: "Wert"
+       language: "Sprache"
+       save: "Speichern"
+       edit:
+         header: "Notiz bearbeiten"
+     navigation:
+       back_to_edit_versioned_object: "Zurück zur Bearbeitung"
+       back_to_show: "Zurück zur Originalversion"
+       back_to_preview: "Zurück zur Versionsvorschau"
+       instance_configuration: "Konfiguration"
+       hierarchical: "Hierarchisch"
+       alphabetical: "Alphabetisch"
+       search: "Suche"
+       about: "Über"
+       users: "Benutzer"
+       collections: "Kollektionen"
+       login: "Login"
+       sections: "Bereiche"
+       quick_search: "Schnellsuche"
+       help: "Hilfe"
+     frontpage:
+       type_to_browse: "Tippen um Konzepte zu durchsuchen"
+     search_results:
+       header: "Suche"
+       inflectionals: "Schreibweisen"
+       contains: "enthält"
+       ends_with: "endet mit"
+       begins_with: "beginnt mit"
+       exact: "exakte Übereinstimmung"
+       regexp: "regulärer Ausdruck (fortgeschritten)"
+       search_term: "Suchbegriff(e)"
+       search_term_in_results: "Suchbegriff"
+       no_results: "Keine Ergebnisse"
+       search_languages: "Sprachen"
+       search_results: "Suchergebnisse"
+       results_found:
+         one: "Ihre Suche nach <strong>%{query}</strong> lieferte %{count} Ergebnis."
+         other: "Ihre Suche nach <strong>%{query}</strong> lieferte %{count} Ergebnisse."
+       no_results_found: "Ihre Suche lieferte keine Ergebnisse."
+       submit: "Suche"
+       type: "Typ"
+       used_as: "benutzt als"
+       language: "Sprache"
+       all: "alle"
+       none: "keine"
+       for: "Nach"
+       mode: "Modus"
+     user_sessions:
+       header: "Anmelden"
+       login: "Anmelden"
+       email: "E-Mail"
+       password: "Passwort"
+       remember_me: "Angemeldet bleiben"
+       error: "E-Mail und/oder Passwort falsch. Bitte überprüfen Sie Ihre Eingabe."
+     users:
+       index:
+         header: "Benutzerverwaltung"
+       new:
+         header: "Neuer Benutzer"
+       edit:
+         header: "Benutzer bearbeiten"
+       name: "Name"
+       email: "E-Mail"
+       role: "Rolle"
+       active: "aktiviert"
+       new_link: "Neuer Benutzer"
+       show_link: "Anzeigen"
+       edit_link: "Bearbeiten"
+       destroy_link: "Löschen"
+       sure: "Sind Sie sicher?"
+       submit: "Speichern"
+       telephone_number: "Telefonnummer"
+     errors:
+       access_denied:
+         header: "Keine Berechtigung"
+         message: "Ihr Benutzerkonto besitzt keine ausreichenden Rechte, um diese Seite anzuzeigen."
+       not_found:
+         header: "Nicht gefunden"
+         tip: "Nutzen Sie die %{link}, um Inhalte zu finden."
+     versioning:
+       edit_mode: "Bearbeitung fortsetzen"
+       to_edit_mode: "In Bearbeitung versetzen"
+       publishing: "Veröffentlichen"
+       delete: "Kopie löschen"
+       delete_confirm: "Kopie wirklich löschen?"
+       versioning_mode: "Neue Version erstellen"
+       unlock: "Entsperren"
+       preview_new_version: "Vorschau der Version in Bearbeitung"
+       consistency_check: "Konsistenz prüfen"
+       current_revision: "Aktuelle Revision %{rev}"
+       in_ongoing_editing_by: "in Bearbeitung von %{user}."
+       to_review_error: "Konnte nicht in den Freigabeprozess aufgenommen werden"
+     labelings:
+       edit:
+         header: "Labeling bearbeiten"
+         submit: "Speichern"
+     lang_widget:
+       caption: "Sprache"
+       primary: "Primärsprache"
+       secondary: "Sekundärsprachen"
+     dashboard:
+       type: "Typ"
+       value: "Name"
+       locking_user: "Gesperrt durch"
+       follow_up: "Wiedervorlage"
+       updated_at: "Geändert am"
+       to_review: "Vorlage zur Freigabe"
+       check_consistency: Konsistenz prüfen
+       consistent: "konsistent"
+       inconsistent: "inkonsistent"
+       state: "Status"
+       full_rdf_export: Vollständiger RDF Export
+       import: Import
+     collections:
+       new: "Neue Kollektion"
+     triplestore_sync:
+       caption: "Sync mit Triplestore"
+       start: "Synchronisierung starten"
+
+   partials:
+     note:
+     collection:
+       skos:
+         member:
+     label:
+       relation:
+     concept:
+       relation:
+     labeling:
+       concept:
+       label:
+     match:
+
+   controllers:
+     instance_configuration:
+       update_success: "Konfigurationänderungen übernommen."
+       update_error: "Fehler in Konfigurationwerten: %{error_messages}."
+       invalid_key: "unbekanntes Feld: %{key}"
+       invalid_value: "fehlerhafter Wert: %{key} (%{error_message})"
+     search_results:
+       insufficient_data: "Bitte geben Sie mehr Suchkriterien an."
+     users:
+       successfully_created: "Benutzer wurde erfolgreich erstellt."
+       successfully_updated: "Der Benutzer wurde erfolgreich geändert."
+     user_sessions:
+       login_success: "Anmeldung erfolgreich."
+       logout_success: "Abmeldung erfolgreich."
+     versioning:
+       branch_error: "Es existiert schon eine neue Version!"
+       published: "Instanz wurde erfolgreich veröffentlicht."
+       published_with_warning: "Instanz wurde erfolgreich veröffentlicht, hat aber keine Relationen zu anderen Instanzen!"
+       merged_delete_error: "Das alte Label konnte nicht gelöscht werden!"
+       merged_publishing_error: "Instanz konnte nicht veröffentlicht werden!"
+       branched: "Instanzkopie wurde erfolgreich angelegt und für andere Benutzer gesperrt."
+       locked: "Instanz wurde für andere User gesperrt."
+       lock_error: "Instanz ist bereits gesperrt!"
+       unlocked: "Instanz wurde für andere User entsperrt."
+       unlock_error: "Instanz ist bereits entsperrt!"
+       new_version_blank_error: "Es existiert noch keine neue Version!"
+       delete: "Instanz löschen."
+       consistency_check_success: "Instanz ist konsistent."
+       consistency_check_success_with_warning: "Instanz ist konsistent , hat aber keine Relationen zu anderen Instanzen!"
+       consistency_check_error: "Instanz ist inkonsistent!"
+       to_review_success: "Wurde in den Freigabeprozess aufgenommen"
+       to_review_error: "Konnte nicht in den Freigabeprozess aufgenommen werden"
+     labelings:
+       save:
+         success: "Das Labeling wurde erfolgreich gespeichert."
+         error: "Das Labeling konnte nicht gespeichert werden."
+     label_versions:
+       delete: "Labelversion wurde erfolgreich gelöscht."
+       delete_error: "Labelversion konnte nicht gelöscht werden"
+     concept_versions:
+       delete: "Konzeptversion wurde erfolgreich gelöscht."
+       delete_error: "Konzeptversion konnte nicht gelöscht werden"
+     notes:
+       save:
+         success: "Die Notiz wurde erfolgreich gespeichert."
+     versioned_label:
+       success: "Das Label wurde erstellt."
+       error: "Das Label konnte nicht gespeichert werden."
+       empty_value: "Die Vorlageform muss ausgefüllt sein."
+       update_success: "Das Label wurde aktualisiert."
+       update_error: "Das Label konnte nicht aktualisiert werden."
+     versioned_concept:
+       success: "Das Konzept wurde erfolgreich angelegt."
+       error: "Das Konzept konnte nicht angelegt werden."
+       empty_value: "Die Vorlageform muss ausgefüllt sein."
+       update_success: "Das Konzept wurde aktualisiert."
+       update_error: "Das Konzept konnte nicht aktualisiert werden."
+       label_error: "Ungültige Label-Zuordnungen:\n%s"
+     narrowers:
+       error: "Die Assoziation wurde nicht gefunden. Evtl. wurde diese von der anderen Seite bearbeitet. Bitte das Fenster neu laden!"
+     collections:
+       save:
+         success: "Die Kollektion wurde erfolgreich gespeichert."
+         error: "Die Kollektion konnte nicht gespeichert werden."
+       destroy:
+         success: "Die Kollektion wurde erfolgreich gelöscht."
+         error: "Die Kollektion konnte nicht gelöscht werden."
+       circular_error: "Ungültige Subkollektions-Zuordnungen aufgrund von Zirkelbezügen:\n%s"
+     triplestore_sync:
+       success: "Synchronisierung erfolgreich."
+       error: "Bei der Synchronisierung traten Fehler auf - einige Einträge wurden nicht synchronisiert."
+       config_info: "Synchronisierung mit Triplestore: %{target_info}"
+       config_warning: "Bisher wurde kein Triplestore konfiguriert."
+       batch_hint: "Für große Datenmengen sollte vom Systemadministrator `rake sync:all[%{host}]` ausgeführt werden."
+
+   models:
+     label:
+       version_error: "Es existieren schon zwei Versionen dieses Labels"
+       value_error: "Die Vorlageform muss ausgefüllt sein!"
+     concept:
+       uri: "Konzept-URI"
+       origin_error: "Origin ungültig!"
+       version_error: "Es existieren schon zwei Versionen dieses Konzepts"
+       no_pref_label_error: "Es muss mindestens ein bevorzugtes Label angegeben werden."
+       orphan_error: "Es muss ein allgemeinerer Begriff oder Top Term zugewiesen werden."
+       top_term_exclusive_error: "Einem Top Term darf kein allgemeinerer Begriff zugewiesen werden."
+       top_term_rooted_error: "Top Terms dürfen nicht als spezifischere Begriffe verwendet werden."
+       invalid_rank_for_ranked_relations: 'Ungültiger Rang für %{relation} "%{relation_target_label}".'
+       main_pref_label_language_missing_error: "Es muss mindestens ein bevorzugtes Label in der Hauptsprache des Thesaurus existieren."
+       pref_labels_with_same_languages_error: "Es darf nur jeweils ein bevorzugtes Label zu einer Sprache geben."
+       association_pref_labels_unpublished: "Das bevorzugte Label muss veröffentlicht sein."
+       association_alt_labels_unpublished: "Alternative Labels müssen veröffentlicht sein."
+       association_hidden_labels_unpublished: "Versteckte Labels müssen veröffentlicht sein."
+       association_broader_unpublished: "Allgemeinere Begriffe müssen veröffentlicht sein."
+       association_narrower_unpublished: "Spezifischere Begriffe müssen veröffentlicht sein."
+       association_related_unpublished: "Verwandte Begriffe müssen veröffentlicht sein."
+       no_pref_label: "-- kein PrefLabel --"

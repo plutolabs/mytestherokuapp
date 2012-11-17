@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+<head>
+<meta charset="utf-8">
+<%= csrf_meta_tag %>
+<title><%= Iqvoc.title || t("txt.common.iqvoc_title") %></title>
+<!-- HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+  <%= javascript_include_tag "html5" %>
+<![endif]-->
+<%= stylesheet_link_tag "manifest" %>
+<!--[if lte IE 8]>
+<%= stylesheet_link_tag "iqvoc/ie_fixes" %>
+<![endif]-->
+<%= yield :head %>
+</head>
+<body>
+<%= render 'layouts/navigation' %>
+
+<div class="container">
+  <div class="row">
+    <div class="<%= content_for?(:sidebar) ? "span9" : "span12" %>" id="content">
+      <%= yield :page_header %>
+      <% flash.each do |type, messages| %>
+        <% (messages.is_a?(Array) ? messages : [messages]).each do |msg| %>
+          <%= alert(type) { msg } %>
+        <% end %>
+      <% end %>
+      <%= yield %>
+    </div>
+    <% if content_for?(:sidebar) %>
+    <div class="span3" id="sidebar">
+      <%= yield :sidebar %>
+    </div>
+    <% end %>
+  </div>
+</div>
+<script>
+  // load JSON polyfill only if necessary
+  if(typeof JSON === "undefined") {
+    document.write('<%= javascript_include_tag("json2").sub("</", "<\\/").html_safe %>');
+  }
+</script>
+<%= javascript_include_tag "manifest" %>
+<%= yield :scripts %>
+</body>
+</html>

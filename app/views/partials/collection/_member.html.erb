@@ -1,0 +1,12 @@
+<div class="relation panel">
+  <h2><%= klass.model_name.human(:count => 2) %></h2>
+  <div class="relation-body">
+    <%- if concept.collections.any? -%>
+      <ul>
+        <%- concept.collections.each do |collection| -%>
+          <li><%= link_to collection.label.to_s, collection_path(:id => collection) %></li>
+        <%- end -%>
+      </ul>
+    <%- end -%>
+  </div>
+</div>
