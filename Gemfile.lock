@@ -74,6 +74,7 @@ GEM
     fastercsv (1.5.5)
     ffi (1.1.5)
     ffi (1.1.5-java)
+    ffi (1.1.5-x86-mingw32)
     heroku (2.31.2)
       heroku-api (~> 0.3.4)
       launchy (>= 0.3.2)
@@ -118,6 +119,7 @@ GEM
     netrc (0.7.7)
     nokogiri (1.5.5)
     nokogiri (1.5.5-java)
+    nokogiri (1.5.5-x86-mingw32)
     pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -196,6 +198,7 @@ GEM
 PLATFORMS
   java
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   activerecord-jdbcmysql-adapter
